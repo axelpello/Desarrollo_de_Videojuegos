@@ -12,7 +12,6 @@ public class Primer : MonoBehaviour
     void Start()
     {
       movimientoCubo = new Vector3 (0f, 0f, 0.01f);       //Le inicializo el valor a ambas variables
-      escalaCubo = new Vector3 (3, 5, 2);
       elCubo.transform.localScale = escalaCubo;   //Al apretar start, cambia la escala del cubo por el valor de "Escala Cubo"
     }
 
