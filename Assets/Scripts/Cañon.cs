@@ -9,17 +9,18 @@ public class Cañon : MonoBehaviour
        
     void Disparo()
     {
-        Instantiate(laBala, canon.position, Quaternion.identity);
+        if (Input.GetKeyDown(KeyCode.Space))
+                    {Instantiate(laBala, canon.position, Quaternion.identity);}
     }
     
     void Start()
     {
-        Disparo();
+        
     }
 
     
     void Update()
     {
-
+        Disparo();
     }
 }
